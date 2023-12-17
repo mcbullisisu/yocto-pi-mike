@@ -1,5 +1,7 @@
 require recipes-core/images/core-image-base.bb
 
+IMAGE_FEATURES:remove = "splash"
+
 IMAGE_INSTALL += "openssh"
 IMAGE_INSTALL += "python3-picamera"
 IMAGE_INSTALL += "pimike-camera"
