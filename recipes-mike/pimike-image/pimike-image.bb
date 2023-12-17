@@ -6,6 +6,8 @@ IMAGE_FEATURES:remove = "splash"
 IMAGE_INSTALL += "util-linux"
 IMAGE_INSTALL += "openssh"
 IMAGE_INSTALL += "pimike-camera"
+IMAGE_INSTALL += "htop"
+IMAGE_INSTALL += "lmsensors"
 # These are now runtime dependencies, and hence automatically installed by pimike-camera
 # IMAGE_INSTALL += "python3-picamera"
 # IMAGE_INSTALL += "rpi-gpio"
