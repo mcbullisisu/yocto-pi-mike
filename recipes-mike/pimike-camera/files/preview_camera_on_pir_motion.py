@@ -13,7 +13,9 @@ from picamera import PiCamera
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(18, GPIO.IN)
 
-camera = PiCamera()
+# Max resolution of the Raspberry Pi camera 2.1 module
+# is 1640x1232. I could detect the max resolution instead.
+camera = PiCamera(resolution=(1640,1232))
 
 # Set up logging for /var/log/messages
 logger = logging.getLogger('MyLogger')
