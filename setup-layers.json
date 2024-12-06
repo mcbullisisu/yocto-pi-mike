@@ -1,0 +1,44 @@
+{
+    "sources": {
+        "meta-openembedded": {
+            "git-remote": {
+                "branch": "nanbield",
+                "describe": "",
+                "remotes": {
+                    "origin": {
+                        "uri": "https://github.com/openembedded/meta-openembedded.git"
+                    }
+                },
+                "rev": "da9063bdfbe130f424ba487f167da68e0ce90e7d"
+            },
+            "path": "meta-openembedded"
+        },
+        "meta-raspberrypi": {
+            "git-remote": {
+                "branch": "HEAD",
+                "describe": "",
+                "remotes": {
+                    "origin": {
+                        "uri": "https://github.com/agherzan/meta-raspberrypi.git"
+                    }
+                },
+                "rev": "fde68b24f08b0eac4ad4bfd3c461dc17fe3a263c"
+            },
+            "path": "meta-raspberrypi"
+        },
+        "poky": {
+            "git-remote": {
+                "branch": "nanbield",
+                "describe": "yocto-4.3.4",
+                "remotes": {
+                    "origin": {
+                        "uri": "https://github.com/yoctoproject/poky.git"
+                    }
+                },
+                "rev": "7b8aa378d069ee31373f22caba3bd7fc7863f447"
+            },
+            "path": "poky"
+        }
+    },
+    "version": "1.0"
+}
