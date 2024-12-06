@@ -40,8 +40,6 @@ set +u
 source "${EXTERNAL_LAYERS_DIR}/poky/oe-init-build-env"
 set -u
 
-bitbake core-image-minimal
-
 # Configure the layers used to build the project
 for layer in ${LAYERS_TO_ADD[@]}; do
     bitbake-layers add-layer "${layer}"
