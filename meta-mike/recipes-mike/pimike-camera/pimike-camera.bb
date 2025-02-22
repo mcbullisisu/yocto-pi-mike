@@ -1,3 +1,5 @@
+SUMMARY = "Utility to monitor PIR sensor & start camera when motion is detection"
+
 SRC_URI:append = "file://test_camera.py \
                   file://preview_camera_on_pir_motion.py \
                   file://pir-camera.sh"

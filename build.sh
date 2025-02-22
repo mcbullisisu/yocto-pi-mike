@@ -48,6 +48,6 @@ done
 # Ubuntu 24.04 dependencies
 # sudo apt install chrpath gawk lz4
 
-bitbake core-image-minimal
+bitbake pimike-image
 
 

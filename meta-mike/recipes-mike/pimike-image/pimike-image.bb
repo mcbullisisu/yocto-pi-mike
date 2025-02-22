@@ -1,4 +1,6 @@
-require recipes-core/images/core-image-base.bb
+require recipes-core/images/core-image-minimal.bb
+
+SUMMARY = "Mike's customized core-image-minimal with additional camera packages"
 
 # Disable the splash screen to save some boot time
 IMAGE_FEATURES:remove = "splash"
