@@ -4,9 +4,9 @@ set -eu -o pipefail
 
 # Ubuntu 24.04 workaround
 # TODO: Mike didn't investigate this much
-echo "Asking for temporary sudo permissions for Ubuntu 24.04 workaround"
-echo "See https://lists.yoctoproject.org/g/yocto/topic/106192359#msg63138"
-echo 0 | sudo tee /proc/sys/kernel/apparmor_restrict_unprivileged_userns
+# echo "Asking for temporary sudo permissions for Ubuntu 24.04 workaround"
+# echo "See https://lists.yoctoproject.org/g/yocto/topic/106192359#msg63138"
+# echo 0 | sudo tee /proc/sys/kernel/apparmor_restrict_unprivileged_userns
 
 # Sourcing oe-init-build-env sets $THIS_SCRIPT
 # and changes the current working directory to the build directory.
@@ -44,9 +44,6 @@ set -u
 for layer in ${LAYERS_TO_ADD[@]}; do
     bitbake-layers add-layer "${layer}"
 done
-
-# Ubuntu 24.04 dependencies
-# sudo apt install chrpath gawk lz4
 
 bitbake pimike-image
 
