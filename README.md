@@ -53,4 +53,4 @@ Using the crops/poky-container, we can minimize having to manually install any d
         1. Add your user to the  docker group - `sudo usermod -a -G docker YourUserName`. This gives to files that can only be used with by the root user or docker group, without having to run sudo.
         2. Either log out & log back in, or run `newgrp docker` to update the list of groups in your current login session. Maybe `newgrp -` is more appropriate? Unsure & I haven't tried it yet
 
-You should now be able to enter the crops/poky container with `docker run --rm -it -v ${PWD}:/workdir crops/poky --workdir=/workdir` & run the same `./build.sh` script.
+You should now be able to enter the crops/poky container with `docker run --rm -it -v ${PWD}:/workdir crops/poky:ubuntu-22.04 --workdir=/workdir` & run the same `./build.sh` script.
